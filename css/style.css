@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row::after{
+    clear:both;
+    display: block;
+    content: "";
+}
+
+.col{
+    float:left;
+}
+
+
+header{
+    background: black;
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header ul.col{
+    float: right;
+}
+
+header ul.col > li{
+    display: inline-block;
+    position: relative;
+}
+
+/*wybieramy wszystkie ul nie posiadający klasy kol, który znajduje się w header*/
+header ul:not(.col) {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
+    padding-top:50px;
+}
+
+header .submenu li{
+    background: black;
+}
+
+header li:hover .submenu{
+    display: block;
+}
