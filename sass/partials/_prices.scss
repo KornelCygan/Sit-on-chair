@@ -1,0 +1,161 @@
+#prices{
+  width: 100%;
+  height: 720px;
+  padding-top: 15px;
+  background-color: $ligth-grey;
+}
+.bigUnderscore{
+  color: $text-color;
+  font-weight: 400;
+  font-size: 18px;
+  &::after{
+    content: '';
+    display: block;
+    width: 330px;
+    height: 6px;
+    margin-top: 2px;
+    background-color: $accent-color;
+  }
+}
+.bigBox{
+  width: 330px;
+  height: 500px;
+  border: 2px solid $border-line;
+  background-color: white;
+  float: left;
+  position: relative;
+  margin-left: 33px;
+  margin-top: 50px;
+  color: $text-color;
+  &:first-child{
+    margin-left: 0;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: $accent-color;
+    margin-top: 25px;
+  }
+  .circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid $border-line;
+    position: absolute;
+    margin-left: -65px;
+    left: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    color: $border-line;
+    padding-top: 80px;
+    text-align: center;
+    span{
+      font-size: 45px;
+      position: absolute;
+      top: 20%;
+      left: 30%;
+    }
+    .last{
+      left: 20px;
+    }
+    sup{
+      font-size: 18px;
+      position: absolute;
+      top: 30%;
+      left: 70%;
+    }
+  }
+  ul{
+    position: absolute;
+    top: 220px;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    li{
+      text-align: center;
+      line-height: 45px;
+      font-size: 18px;
+      &:nth-child(2n + 0){
+        background-color: $ligth-grey;
+      }
+      &:nth-child(2n + 1){
+        background-color: $dark-grey;
+      }
+    }
+  }
+  button{
+    display: block;
+    width: 126px;
+    height: 35px;
+    background-color: $accent-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -63px;
+    left: 50%;
+    top: 89%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .pin{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-left: -28px;
+    margin-top: -28px;
+    top: -2%;
+    left: 50%;
+    border: 2px solid $border-line;
+    background-color: white;
+    position: absolute;
+    &::after{
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      margin-left: -11px;
+      margin-top: -11px;
+      top: 50%;
+      left: 50%;
+      background-color: $border-line;
+      position: absolute;
+    }
+  }
+}
+.greenBox{
+  border: 2px solid $accent-color;
+  background-color: $accent-color;
+  h3{
+    color: white;
+  }
+  .circle{
+    border: 2px solid $accent-color;
+    background-color: white;
+    color: $accent-color;
+  }
+  button{
+    background-color: white;
+    color: $accent-color;
+  }
+  .pin{
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    &::after{
+      background-color: white;
+    }
+  }
+  ul{
+    li{
+      &:nth-child(2n + 0){
+        background-color: $dark-grey;
+      }
+      &:nth-child(2n + 1){
+        background-color: $ligth-grey;
+      }
+    }
+  }
+}

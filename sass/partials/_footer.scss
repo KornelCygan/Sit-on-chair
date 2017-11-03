@@ -1,0 +1,21 @@
+footer{
+  height: 110px;
+  color: $text-color;
+  font-size: 18px;
+  .copyrights{
+    float: left;
+    line-height: 110px;
+  }
+  .social{
+    float: right;
+    line-height: 110px;
+  }
+  .SOClogo{
+    float: right;
+    line-height: 110px;
+    margin-left: 60px;
+    span{
+      font-weight: 700;
+    }
+  }
+}
